@@ -120,7 +120,7 @@ export default function Contact() {
                                 {
                                     icon: MailIcon,
                                     title: "Email",
-                                    content: "indulgia.lb@gmail.com",
+                                    content: "info@indulgia-lb.com",
                                 },
                                 {
                                     icon: PhoneIcon,
@@ -130,7 +130,7 @@ export default function Contact() {
                                 {
                                     icon: MapPinIcon,
                                     title: "Location",
-                                    content: "Lebanon, Beirut, Tariq Jdede",
+                                    content: "Lebanon, Beirut",
                                 },
                             ].map((item, index) => (
                                 <motion.div
