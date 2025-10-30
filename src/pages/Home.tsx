@@ -1,32 +1,9 @@
 import { Link } from "react-router-dom";
 import { HeartIcon, GiftIcon, SparklesIcon } from "lucide-react";
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async";
 export default function Home() {
     return (
         <>
-            <Helmet>
-                <script type="application/ld+json">
-                    {JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "LocalBusiness",
-                        name: "Indulgia",
-                        image: "https://indulgia-lb.com/logo.png",
-                        url: "https://indulgia-lb.com",
-                        telephone: "+96178794524",
-                        address: {
-                            "@type": "PostalAddress",
-                            addressLocality: "Beirut",
-                            addressCountry: "LB",
-                        },
-                        sameAs: [
-                            "https://www.instagram.com/indulgia.lb",
-                            "https://www.facebook.com/indulgia.lb",
-                        ],
-                    })}
-                </script>
-            </Helmet>
-
             <div className="w-full">
                 {/* Hero Section */}
                 <section

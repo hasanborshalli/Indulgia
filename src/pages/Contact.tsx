@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { MailIcon, PhoneIcon, MapPinIcon } from "lucide-react";
 import { motion } from "framer-motion";
 import { useForm } from "@formspree/react";
-import { Helmet } from "react-helmet-async";
 export default function Contact() {
     const [formData, setFormData] = useState({
         name: "",
@@ -48,19 +47,6 @@ export default function Contact() {
     };
     return (
         <>
-            <Helmet>
-                <title>Contact Indulgia | Get in Touch</title>
-                <meta
-                    name="description"
-                    content="Get in touch with Indulgia — we’re here to help with orders, collaborations, and chocolate gifting inquiries across Lebanon."
-                />
-                <meta
-                    name="keywords"
-                    content="contact Indulgia, chocolate shop Lebanon, order chocolates, Indulgia contact, premium chocolate gifts"
-                />
-                <link rel="canonical" href="https://indulgia-lb.com/contact" />
-            </Helmet>
-
             <div
                 className="w-full"
                 style={{

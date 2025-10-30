@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async";
 const menuItems = [
     {
         id: 1,
@@ -40,19 +39,6 @@ const menuItems = [
 export default function Menu() {
     return (
         <>
-            <Helmet>
-                <title>Our Menu | Indulgia Chocolates & Collections</title>
-                <meta
-                    name="description"
-                    content="Explore Indulgia’s chocolate menu — from signature truffles to elegant gift assortments. Crafted with love for true chocolate enthusiasts."
-                />
-                <meta
-                    name="keywords"
-                    content="Indulgia menu, chocolate flavors, truffles, pralines, gift boxes, Lebanese chocolate shop"
-                />
-                <link rel="canonical" href="https://indulgia-lb.com/menu" />
-            </Helmet>
-
             <div
                 className="w-full"
                 style={{
