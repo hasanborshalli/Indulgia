@@ -6,36 +6,24 @@ export default function Home() {
     return (
         <>
             <Helmet>
-                <title>Indulgia | Handcrafted Chocolates in Lebanon</title>
-                <meta
-                    name="description"
-                    content="Indulgia crafts luxurious handcrafted chocolates made with pure ingredients and timeless elegance. Experience the art of chocolate indulgence in Lebanon."
-                />
-                <meta
-                    name="keywords"
-                    content="Indulgia, chocolate Lebanon, artisanal chocolates, handmade sweets, premium chocolate, gift boxes"
-                />
-                <link rel="canonical" href="https://indulgia-lb.com/" />
                 <script type="application/ld+json">
-                    {`
-      {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Indulgia",
-        "image": "https://indulgia-lb.com/logo.png",
-        "url": "https://indulgia-lb.com",
-        "telephone": "+96178794524",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Beirut",
-          "addressCountry": "LB"
-        },
-        "sameAs": [
-          "https://www.instagram.com/indulgia.lb/",
-          "https://www.tiktok.com/@indulgia.lb"
-        ]
-      }
-    `}
+                    {JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "LocalBusiness",
+                        name: "Indulgia",
+                        image: "https://indulgia-lb.com/logo.png",
+                        url: "https://indulgia-lb.com",
+                        telephone: "+96178794524",
+                        address: {
+                            "@type": "PostalAddress",
+                            addressLocality: "Beirut",
+                            addressCountry: "LB",
+                        },
+                        sameAs: [
+                            "https://www.instagram.com/indulgia.lb",
+                            "https://www.facebook.com/indulgia.lb",
+                        ],
+                    })}
                 </script>
             </Helmet>
 
