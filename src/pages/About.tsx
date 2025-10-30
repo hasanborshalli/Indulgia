@@ -58,7 +58,7 @@ export default function About() {
                         className="relative flex justify-center items-center"
                     >
                         <img
-                            src="/public/about.jpeg"
+                            src="/about.jpeg"
                             alt="Artisan chocolate making"
                             className="w-full h-auto max-h-[600px] object-cover rounded-lg shadow-xl"
                         />

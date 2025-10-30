@@ -5,35 +5,35 @@ const menuItems = [
         name: "Strawberry Affair",
         description:
             "9 fresh strawberries dipped in your choice of white, milk, dark or a mix - elegantly drizzled for a luxurious bite.",
-        image: "/public/strawberry.jpeg",
+        image: "/strawberry.jpeg",
     },
     {
         id: 2,
         name: "Pretty in Pink",
         description:
             "A charming selection of 9 strawberries dressed in pink and white chocolate, with delicate drizzles, edible butterflies and fruity freeze-dried toppings.",
-        image: "/public/pinky.jpeg",
+        image: "/pinky.jpeg",
     },
     {
         id: 3,
         name: "Cherry Seduction",
         description:
             "16 luscious cherries dipped in milk, white or dark chocolate, finished with a touch of edible gold for an irresistible treat.",
-        image: "/public/cherry.jpeg",
+        image: "/cherry.jpeg",
     },
     {
         id: 4,
         name: "Fruity Symphony",
         description:
             "18 chocolate pieces topped with fresh raspberries, blueberries and pomegranate seeds. Choose your favorite of milk, white, dark or a mix.",
-        image: "/public/fruity.jpeg",
+        image: "/fruity.jpeg",
     },
     {
         id: 5,
         name: "24 Karat Bites",
         description:
             "24 luxurious chocolate bites, each filled with a delicious variety of premium nuts, crafted from a perfect blend of milk, white and dark chocolate.",
-        image: "/public/karat.jpeg",
+        image: "/karat.jpeg",
     },
 ];
 export default function Menu() {
