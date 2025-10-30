@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://indulgia-lb.com/sitemap.xml

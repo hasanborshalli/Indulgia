@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 const menuItems = [
     {
         id: 1,
@@ -38,103 +39,119 @@ const menuItems = [
 ];
 export default function Menu() {
     return (
-        <div
-            className="w-full"
-            style={{
-                backgroundColor: "rgb(247, 231, 206)",
-            }}
-        >
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-                <motion.h1
-                    initial={{
-                        opacity: 0,
-                        y: 20,
-                    }}
-                    animate={{
-                        opacity: 1,
-                        y: 0,
-                    }}
-                    transition={{
-                        duration: 0.6,
-                    }}
-                    className="text-5xl font-seasons font-bold text-center mb-4"
-                    style={{
-                        color: "rgb(0, 0, 77)",
-                    }}
-                >
-                    Our Menu
-                </motion.h1>
-                <motion.p
-                    initial={{
-                        opacity: 0,
-                        y: 20,
-                    }}
-                    animate={{
-                        opacity: 1,
-                        y: 0,
-                    }}
-                    transition={{
-                        duration: 0.6,
-                        delay: 0.2,
-                    }}
-                    className="text-xl text-center mb-16"
-                    style={{
-                        color: "rgb(0, 0, 77)",
-                    }}
-                >
-                    Discover our collection of handcrafted chocolate delights
-                </motion.p>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {menuItems.map((item, index) => (
-                        <motion.div
-                            key={item.id}
-                            initial={{
-                                opacity: 0,
-                                y: 30,
-                            }}
-                            animate={{
-                                opacity: 1,
-                                y: 0,
-                            }}
-                            transition={{
-                                duration: 0.5,
-                                delay: index * 0.1,
-                            }}
-                            whileHover={{
-                                y: -8,
-                            }}
-                            className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
-                        >
-                            <div className="h-64 overflow-hidden">
-                                <motion.img
-                                    whileHover={{
-                                        scale: 1.05,
-                                    }}
-                                    transition={{
-                                        duration: 0.3,
-                                    }}
-                                    src={item.image}
-                                    alt={item.name}
-                                    className="w-full h-full object-contain"
-                                />
-                            </div>
-                            <div className="p-6">
-                                <h3
-                                    className="text-2xl font-dm-sans font-semibold mb-3"
-                                    style={{
-                                        color: "rgb(0, 0, 77)",
-                                    }}
-                                >
-                                    {item.name}
-                                </h3>
-                                <p className="text-gray-600">
-                                    {item.description}
-                                </p>
-                            </div>
-                        </motion.div>
-                    ))}
+        <>
+            <Helmet>
+                <title>Our Menu | Indulgia Chocolates & Collections</title>
+                <meta
+                    name="description"
+                    content="Explore Indulgia’s chocolate menu — from signature truffles to elegant gift assortments. Crafted with love for true chocolate enthusiasts."
+                />
+                <meta
+                    name="keywords"
+                    content="Indulgia menu, chocolate flavors, truffles, pralines, gift boxes, Lebanese chocolate shop"
+                />
+                <link rel="canonical" href="https://indulgia-lb.com/menu" />
+            </Helmet>
+
+            <div
+                className="w-full"
+                style={{
+                    backgroundColor: "rgb(247, 231, 206)",
+                }}
+            >
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+                    <motion.h1
+                        initial={{
+                            opacity: 0,
+                            y: 20,
+                        }}
+                        animate={{
+                            opacity: 1,
+                            y: 0,
+                        }}
+                        transition={{
+                            duration: 0.6,
+                        }}
+                        className="text-5xl font-seasons font-bold text-center mb-4"
+                        style={{
+                            color: "rgb(0, 0, 77)",
+                        }}
+                    >
+                        Our Menu
+                    </motion.h1>
+                    <motion.p
+                        initial={{
+                            opacity: 0,
+                            y: 20,
+                        }}
+                        animate={{
+                            opacity: 1,
+                            y: 0,
+                        }}
+                        transition={{
+                            duration: 0.6,
+                            delay: 0.2,
+                        }}
+                        className="text-xl text-center mb-16"
+                        style={{
+                            color: "rgb(0, 0, 77)",
+                        }}
+                    >
+                        Discover our collection of handcrafted chocolate
+                        delights
+                    </motion.p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {menuItems.map((item, index) => (
+                            <motion.div
+                                key={item.id}
+                                initial={{
+                                    opacity: 0,
+                                    y: 30,
+                                }}
+                                animate={{
+                                    opacity: 1,
+                                    y: 0,
+                                }}
+                                transition={{
+                                    duration: 0.5,
+                                    delay: index * 0.1,
+                                }}
+                                whileHover={{
+                                    y: -8,
+                                }}
+                                className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+                            >
+                                <div className="h-64 overflow-hidden">
+                                    <motion.img
+                                        whileHover={{
+                                            scale: 1.05,
+                                        }}
+                                        transition={{
+                                            duration: 0.3,
+                                        }}
+                                        src={item.image}
+                                        alt={item.name}
+                                        className="w-full h-full object-contain"
+                                    />
+                                </div>
+                                <div className="p-6">
+                                    <h3
+                                        className="text-2xl font-dm-sans font-semibold mb-3"
+                                        style={{
+                                            color: "rgb(0, 0, 77)",
+                                        }}
+                                    >
+                                        {item.name}
+                                    </h3>
+                                    <p className="text-gray-600">
+                                        {item.description}
+                                    </p>
+                                </div>
+                            </motion.div>
+                        ))}
+                    </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 }
