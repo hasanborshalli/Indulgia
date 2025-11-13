@@ -16,10 +16,10 @@ const menuItems = [
     },
     {
         id: 3,
-        name: "Cherry Seduction",
+        name: "Banana Opulence",
         description:
-            "16 luscious cherries dipped in milk, white or dark chocolate, finished with a touch of edible gold for an irresistible treat.",
-        image: "/cherry.jpeg",
+            "9 pieces of frozen banana dipped in your choice of milk, white, or dark chocolate – crowned with nuts, a delicate drizzle and golden accents for a touch of grandeur.",
+        image: "/banana.jpeg",
     },
     {
         id: 4,
@@ -34,6 +34,13 @@ const menuItems = [
         description:
             "24 luxurious chocolate bites, each filled with a delicious variety of premium nuts, crafted from a perfect blend of milk, white and dark chocolate.",
         image: "/karat.jpeg",
+    },
+    {
+        id: 6,
+        name: "Pistachio Crunché",
+        description:
+            "18 delicate chocolate bites filled with a rich pistachio–feuilletine blend, enveloped in milk chocolate, elegantly drizzled and adorned with gold flakes.",
+        image: "pistachio.jpeg",
     },
 ];
 export default function Menu() {
