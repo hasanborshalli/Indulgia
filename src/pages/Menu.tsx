@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import Snowfall from "react-snowfall";
+
 const menuItems = [
     {
         id: 1,
@@ -46,6 +48,7 @@ const menuItems = [
 export default function Menu() {
     return (
         <>
+            <Snowfall color="#82c3d9" />
             <div
                 className="w-full"
                 style={{

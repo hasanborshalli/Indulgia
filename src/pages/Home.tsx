@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { HeartIcon, GiftIcon, SparklesIcon } from "lucide-react";
 import { motion } from "framer-motion";
+import Snowfall from "react-snowfall";
+
 export default function Home() {
     return (
         <>
@@ -12,6 +14,7 @@ export default function Home() {
                         backgroundColor: "rgb(247, 231, 206)",
                     }}
                 >
+                    <Snowfall color="#82c3d9" />
                     <div className="absolute inset-0 opacity-20">
                         <img
                             src="https://images.unsplash.com/photo-1511381939415-e44015466834?w=1600&h=900&fit=crop"

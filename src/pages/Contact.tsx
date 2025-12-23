@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { MailIcon, PhoneIcon, MapPinIcon } from "lucide-react";
 import { motion } from "framer-motion";
 import { useForm } from "@formspree/react";
+import Snowfall from "react-snowfall";
+
 export default function Contact() {
     const [formData, setFormData] = useState({
         name: "",
@@ -47,6 +49,7 @@ export default function Contact() {
     };
     return (
         <>
+            <Snowfall color="#82c3d9" />
             <div
                 className="w-full"
                 style={{
